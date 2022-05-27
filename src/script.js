@@ -123,7 +123,7 @@ const tick = () =>
     // Update particles
     
     particles.position.y =  - elapsedTime * 0.2
-    console.log(particles.position.y);
+    //console.log(particles.position.y);
     if (particles.position.y < -2) {
         particles.position.y = 0
         particles.rotation.y =  Math.sin(- elapsedTime * 0.02)
