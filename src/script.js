@@ -8,7 +8,13 @@ import * as dat from 'lil-gui'
  */
 // Debug
 //const gui = new dat.GUI()
-
+window.addEventListener('dblclick', () => {
+    if (!document.fullscreenElement) {
+        canvas.requestFullscreen()
+    } else {
+        document.exitFullscreen()
+    }
+})
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
 
